@@ -1,0 +1,17 @@
+{
+  "name": "Evenfall-Tech.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cpx \"src/**/*\" dist",
+    "deploy": "git add dist -f && git commit -m 'Deploy build' && git subtree push --prefix dist origin gh-pages",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cpx": "^1.5.0"
+  }
+}
